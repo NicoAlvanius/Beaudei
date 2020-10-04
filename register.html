@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beaudei</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img class="logo-img" src="pictures/logo.png" alt=""></a>
+            </div>
+
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="promotion.html">Promotion</a></li>
+                <li class="shop-makeup">Shop Make Up
+                    <div class="dropdown">
+                        <a href="shopMakeUp.html">Eye Liner</a>
+                        <a href="shopMakeUp.html">EyeShadow</a>
+                        <a href="shopMakeUp.html">Lipstick</a>
+                    </div>
+                </li>
+                <li class="shop-skincare">Shop Skin Care
+                    <div class="dropdown">
+                        <a href="shopSkinCare.html">Mask</a>
+                        <a href="shopSkinCare.html">Sunblock</a>
+                        <a href="shopSkinCare.html">Toner</a>
+                    </div>
+                </li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="register">
+        <form action="index.html" method="post" name="registerForm">
+            <h2>Register Now!</h2>
+            <label for="">Input Name</label><br>
+            <input class="text" type="text" id="name"> <br>
+            <label for="">Input Email</label><br>
+            <input class="text" type="email" name="" id="mail"> <br>
+            <label for="">Input Password</label><br>
+            <input class="text" type="password" name="" id="pw"> <br>
+            <label for="">Gender</label><br>
+            <input class="radio" type="radio" name="Gender" id="female" value="female">Female
+            <input class="radio" type="radio" name="Gender" id="male" value="male">Male <br>
+            <label for="">Skin Type</label> <br>
+            <select name="skinType">
+                <option value="empty">Choose Your Skin Type</option>
+                <option value="comb">Combination</option>
+                <option value="dry">Dry Skin</option>
+                <option value="normal">Normal Skin</option>
+                <option value="oil">Oil Skin</option>
+            </select> <br>
+
+            <p> <input type="checkbox" name="" id="check"> By creating account, you agree with all term and condition
+            </p>
+            <button class="regBtn" onclick="return registerValidate()">Register</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <h1>Copyright Beaudei</h1>
+    </footer>
+    <script src="javascript/jquery3.5.1.js"></script>
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>
